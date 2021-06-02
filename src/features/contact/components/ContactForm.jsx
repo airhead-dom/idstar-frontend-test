@@ -10,7 +10,8 @@ const ContactForm = ({current, loading = false, onSubmit}) => {
   
   useEffect(() => {
     reset(current);
-  }, [current])
+  
+  }, [current, reset])
   
   const onFormSubmit = (data) => {
     onSubmit(data);

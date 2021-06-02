@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import contactService from "../../service/contactService";
-import { get } from 'react-hook-form';
-
 
 const initialContactState = {
   currentList: [],
