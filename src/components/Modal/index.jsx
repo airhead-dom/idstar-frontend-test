@@ -16,7 +16,7 @@ const Modal = ({open, children}) => {
 
 Modal.propTypes = {
   open: PropTypes.bool,
-  children: PropTypes.oneOf([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
+  children: PropTypes.node
 };
 
 export default Modal;

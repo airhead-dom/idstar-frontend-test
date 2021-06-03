@@ -113,12 +113,14 @@ const Contact = () => {
         </div>
         
         <Modal open={detailModal}>
-          {selectedContact &&
-          <ContactDetail contact={selectedContact} onCloseClick={onDetailCloseModalClick} onEditSubmit={onEditSubmit}
-                         editLoading={contactState.loading.put}/>
-          }
-          
-          {selectedContact == null && <p>Invalid contact chosen.</p>}
+          <>
+            {selectedContact &&
+            <ContactDetail contact={selectedContact} onCloseClick={onDetailCloseModalClick} onEditSubmit={onEditSubmit}
+                           editLoading={contactState.loading.put}/>
+            }
+            
+            {selectedContact == null && <p>Invalid contact chosen.</p>}
+          </>
         </Modal>
         
         <Modal open={postModal}>
